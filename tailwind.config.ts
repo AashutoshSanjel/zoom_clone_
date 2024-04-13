@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: ["class"],
+  darkMode: "class", // change to "class" instead of ["class"] as it expects a string
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -22,6 +22,7 @@ const config: Config = {
         dark: {
           1: '#1C1F2E',
           2: '#161925',
+          3: '#121418'  // Add your desired dark-3 color code here
         },
         blue: {
           1: '#0E78F9'
